@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "govuk-frontend": "2.9.0",
+    "govuk-react-components": "git://git@github.com:LandRegistry/govuk-react-components.git#master",
+    "hmlr-design-system": "git://git@github.com:LandRegistry/hmlr-design-system.git#develop",
+    "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8"
