@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import 'govuk-frontend/all.scss';
-import 'hmlr-design-system/hmlr_design_system/components/header-internal/style.scss';
+import './app.scss'
 import Header from 'hmlr-design-system/hmlr_design_system/components/header-internal/component.js';
 
 class App extends Component {
