@@ -6,11 +6,12 @@ module.exports = {
   bail: true,
   devtool: 'source-map',
   output: {
-    path: path.resolve('dist')
+    path: path.resolve('public')
   },
   devServer: {
     contentBase: './public',
-    hot: true
+    hot: true,
+    watchContentBase: true
   },
 //   stats: {
 //     assets: true,
@@ -46,13 +47,7 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
-            loader: 'file-loader',
-            options: {
-              name (file) {
-                return `images/[name].[ext]`
-              },
-              publicPath: '/dist'
-            }
+            loader: 'file-loader'
           }
         ]
       },
