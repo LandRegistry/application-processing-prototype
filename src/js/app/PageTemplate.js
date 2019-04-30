@@ -2,22 +2,25 @@ import React, { Component } from 'react';
 import Header from 'hmlr-design-system/hmlr_design_system/components/header/component.js';
 import Footer from 'hmlr-design-system/hmlr_design_system/components/footer/component.js';
 
-function App(props) {
+function PageTemplate(props) {
+  const classes = props.leftColumn ? 'hmlr-header--align-grid' : 'hmlr-header--full-width'
+
   return <>
-      <Header variant='dark' classes='hmlr-header--align-grid' headerTitle="React prototype kit" />
+      <Header variant='dark' classes={classes} headerTitle="React prototype kit" />
 
       <main className="hmlr-grid-row" id="main-content" role="main">
-        <div className="hmlr-grid-column"><p className="govuk-body">Left column</p></div>
+
+        {props.leftColumn && <div className="hmlr-grid-column">{props.leftColumn}</div>}
 
         <div className="hmlr-grid-column hmlr-grid-column--main">
-          <p className="govuk-body">Main column</p>
+            {props.children}
         </div>
 
-        <div className="hmlr-grid-column"><p className="govuk-body">Right column</p></div>
+        {props.rightColumn && <div className="hmlr-grid-column">{props.rightColumn}</div>}
       </main>
 
       <Footer classes='hmlr-footer--full-width' variant='dark' />
     </>
 }
 
-export default App;
+export default PageTemplate;
