@@ -56,15 +56,15 @@ function KitchenSink() {
         }
       }]} headingLevel="2" />
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
+      <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
 
       <BackLink href="/" />
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
+      <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
 
       <Button text="Hello I'm a button" />
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
+      <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
 
       <Checkboxes classes='govuk-checkboxes--small' name="waste" items={[{
         value: "carcasses",
@@ -79,11 +79,11 @@ function KitchenSink() {
         text: "Farm or agricultural waste"
       }]} />
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
+      <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
 
       <Details open={true} summaryHtml={<p>Details</p>} html={<p>Details main content</p>} />
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
+      <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
 
       <ErrorSummary
         titleText="There is a problem"
