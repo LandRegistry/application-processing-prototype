@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import PageTemplate from './PageTemplate'
+import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from './pages/Home';
 import KitchenSink from './pages/KitchenSink';
+import Sample from './pages/Sample';
 
-function App(props) {
-  return <PageTemplate>
+function App() {
+  return <div class="wrapper">
     <Router>
-    <h1 className="govuk-heading-l">GOV.UK React Prototyping kit</h1>
-      <Link to="/kitchen-sink" className="govuk-link">Kitchen sink</Link><br /><br />
-      <Route path="/kitchen-sink" component={KitchenSink} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/kitchen-sink" component={KitchenSink} />
+      <Route exact path="/sample" component={Sample} />
     </Router>
-  </PageTemplate>
+  </div>
 }
 
 export default App;
