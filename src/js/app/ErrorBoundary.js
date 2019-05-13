@@ -1,5 +1,5 @@
 import React from 'react';
-import PageTemplate from './PageTemplate'
+import PageTemplate from './templates/PageTemplate'
 
 class ErrorBoundary extends React.Component {
   constructor(props) {

@@ -16,3 +16,6 @@ $govuk-font-family: "Arial", sans-serif;
 @import 'hmlr-design-system/hmlr_design_system/components/text-input/style.scss';
 @import 'hmlr-design-system/hmlr_design_system/components/typography/style.scss';
 @import 'hmlr-design-system/hmlr_design_system/components/footer/style.scss';
+
+// Local styles
+@import 'styles.scss';
