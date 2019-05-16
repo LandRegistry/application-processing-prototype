@@ -89,14 +89,27 @@ function KitchenSink() {
         titleText="There is a problem"
         errorList={errorList}
       />
-      {/* <Fieldset />
-    <Input />
-    <Panel />
-    <Radios />
-    <SkipLink />
-    <Tag />
-    <Textarea />
-    <WarningText /> */}
+      <Fieldset legend={{ text: "Fieldset legend (required if using fieldset)" }}>
+        <Input
+          label={{ text: "Label for text input on the application prototype kit" }} />
+      </Fieldset>
+      <Panel text="Panel text" />
+      <Radios classes='govuk-checkboxes--small' name="waste" items={[{
+        value: "carcasses",
+        text: "Waste from animal carcasses",
+      },
+      {
+        value: "mines",
+        text: "Waste from mines or quarries"
+      },
+      {
+        value: "farm",
+        text: "Farm or agricultural waste"
+      }]} />
+      <SkipLink />
+      <Tag />
+      <Textarea label={{ text: "Textarea label (required) for prototype kit" }} />
+      <WarningText text="Some warning text" />
     </div>
   </PageTemplate>
 }
