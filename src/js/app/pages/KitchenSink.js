@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PageTemplate from '../templates/PageTemplate';
 import Accordion from 'govuk-react-components/src/components/govukComponents/Accordion'
 import BackLink from 'govuk-react-components/src/components/govukComponents/BackLink'
@@ -81,7 +81,7 @@ function KitchenSink() {
 
       <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
 
-      <Details open={true} summaryHtml={<p>Details</p>} html={<p>Details main content</p>} />
+      <Details open={true} summaryText={"Details"} html={<p>Details main content</p>} />
 
       <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
 
@@ -89,11 +89,20 @@ function KitchenSink() {
         titleText="There is a problem"
         errorList={errorList}
       />
+
+      <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
+
       <Fieldset legend={{ text: "Fieldset legend (required if using fieldset)" }}>
         <Input
-          label={{ text: "Label for text input on the application prototype kit" }} />
+          label={{ text: "Label for text input on the application prototype kit." }} />
       </Fieldset>
-      <Panel text="Panel text" />
+
+      <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
+
+      <Panel titleText="Example title text" text="Panel text" />
+
+      <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
+
       <Radios classes='govuk-checkboxes--small' name="waste" items={[{
         value: "carcasses",
         text: "Waste from animal carcasses",
@@ -106,9 +115,19 @@ function KitchenSink() {
         value: "farm",
         text: "Farm or agricultural waste"
       }]} />
+
+      <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
+
       <SkipLink />
-      <Tag />
+
+      <Tag text={"example text"} />
+
+      <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
+
       <Textarea label={{ text: "Textarea label (required) for prototype kit" }} />
+
+      <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
+
       <WarningText text="Some warning text" />
     </div>
   </PageTemplate>
