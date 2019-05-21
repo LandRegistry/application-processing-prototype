@@ -1,9 +1,12 @@
+@import './variables';
+
 // GOV.UK design system
 $govuk-images-path: '/ui/.govuk-frontend/images/';
 $govuk-fonts-path: '/ui/.govuk-frontend/fonts/';
 $govuk-font-family: "Arial", sans-serif;
 
 @import 'hmlr-design-system/hmlr_design_system/settings/variables.scss';
+
 
 @import 'govuk-frontend/all.scss';  // Feel free to be more selective than this
 
@@ -18,4 +21,6 @@ $govuk-font-family: "Arial", sans-serif;
 @import 'hmlr-design-system/hmlr_design_system/components/footer/style.scss';
 
 // Local styles
-@import 'styles.scss';
+@import './variables';
+@import './styles';
+
