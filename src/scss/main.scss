@@ -19,6 +19,6 @@ $govuk-font-family: "Arial", sans-serif;
 @import 'hmlr-design-system/hmlr_design_system/components/footer/style.scss';
 
 // Local styles
-@import './variables';
-@import './styles';
+@import './variables.scss';
+@import './styles.scss';
 
